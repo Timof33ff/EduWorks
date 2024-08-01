@@ -1,0 +1,4 @@
+﻿  HashTable.cpp
+  LB10TextSort.cpp
+  Создание кода...
+C:\Users\Pc\Documents\inform\MFMGTU\LB10TextSort\LB10TextSort\HashTable.cpp(7): error C4700: использована неинициализированная локальная переменная "key"
