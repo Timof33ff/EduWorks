@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1707859690 source:/home/kirill/Documents/Im_to_ASCII/Im_to_ASCII/main.cpp
+	"ImToASCII.h"
+
+1707859647 source:/home/kirill/Documents/Im_to_ASCII/Im_to_ASCII/src/ImToASCII.cpp
+	"ImToASCII.h"
+
+1707857834 /home/kirill/Documents/Im_to_ASCII/Im_to_ASCII/include/ImToASCII.h
+	"SFML/Graphics.hpp"
+	<string.h>
+	<iostream>
+	<fstream>
+
