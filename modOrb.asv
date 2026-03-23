@@ -1,0 +1,34 @@
+function [] = modOrb()
+%modOrb Модель орбитального движения
+%   Формирует текущее пространственное положение 
+%   КА и его скорость движения
+global bortStep;    % <- Шаг моделирования, с
+global julianDays;  % <- Количество Юлианских суток с эпохи J2000, сутки
+global julianCent;  % <- Количество Юлианских столетий с эпохи J2000, столетия
+global modRJ2k;     % -> Вектор координат центра масс КА в ИСК, км 
+global modVJ2k;     % -> Вектор скоростей центра масс КА в ИСК, км/с 
+global modRGsk;     % -> Вектор координат центра масс КА в гринвичской СК, км 
+global modVGsk;     % -> Вектор скоростей центра масс КА в гринвичской СК, км/с 
+global modQJ2k2Osk; % -> Кватернион перехода от ИСК J2000 к ОСК
+global modQJ2k2Grn; % -> Кватернион перехода от ИСК J2000 к ГСК
+global modWorb;     % -> Модуль уголовой скорости орбитального движения, рад/с
+
+%% Расчет матрицы перехода от ГСК к J2000
+P = ePrecession(julianCent);
+[N Na] = eNutation(julianCent);
+R = eRotation(julianDays, Na);
+mJ2k2Grn = R*N*P;
+modQJ2k2Grn = dcm2quat(mJ2k2Grn);
+
+
+%% Расчет матрицы перехода от ИСК J2000 к ОСК
+Oy = modRJ2k/norm(modRJ2k);
+Oz = cross(modVJ2k,modRJ2k)/(norm(cross(modVJ2k,modRJ2k)));
+Ox = cross(Oy, Oz)/norm(cross(Oy, Oz));
+Mosk2J2k = [Ox Oy Oz];
+MJ2k2osk = Mosk2J2k';
+modQJ2k2Osk = dcm2quat(MJ2k2osk);
+
+
+end
+

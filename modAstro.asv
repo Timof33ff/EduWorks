@@ -1,0 +1,69 @@
+function [] = modAstro()
+%modAstro Моделирование движения астроориентиров (Луна, Земля, Солнце)
+global julianCent;      %<- Количество Юлианских столетий с эпохи J2000
+global modQJ2k2Body;    %<- Кватернион разворота связанного базиса относительно ИСК J2000
+global vSunBody;        %-> Орт направления на Солнце в связанном базисе
+global vMoonBody;       %-> Орт направления на Луну в связанном базисе
+
+tau = julianCent;
+Mm = 2.355548393 + 8328.69142288*tau + 1.517952*10^-4*tau^2 + 3.103*10^-7*tau^3;
+Ms = 6.24003594 + 628.30195602*tau - 2.7974*10^-6*tau^2 - 5.82*10^-8*tau^3;
+Fm = 1.62790193 + 8433.46615831*tau - 6.42717*10^-5*tau^2 + 5.33*10^-8*tau^3;
+Ds = 5.19846951 + 7771.37714617*tau - 3.34085*10^-5*tau^2 + 9.21*10^-8*tau^3;
+
+%sunPos Вычисление вектора направления на Солнце
+Lm = 4.8950563519+tau*(628.33196621395 + 5.279621e-6*tau);
+
+
+Ms = (0.5*Ms/pi - floor(0.5*Ms/pi))*2*pi;
+Lm = (0.5*Lm/pi - floor(0.5*Lm/pi))*2*pi;
+Lm_sec = Lm*180/pi * 3600;
+Ms_sec = Ms*180/pi * 3600;
+
+p = 2.4381748353e-4*tau + 5.386910254912387e-8*tau^2;
+dL = 0.033502079546*sin(Ms) + 3.5074667539e-4*sin(2*Ms) + 5.235987756e-6*sin(3*Ms);
+dL_sec = dL * 180/pi * 3600;
+
+% Долгота Солнца
+Ls = Lm + p + dL;
+Ls_sec = Ls*180/pi * 3600;
+Ls = (0.5*Ls/pi - floor(0.5*Ls/pi))*2*pi;
+
+e = 0.016708617 - 0.000042037*tau - 0.0000001236*tau^2;
+Rs = 1.00000100178*149597870.7*(1+0.5*e^2-e*cos(Ms)-0.5*e^2*cos(2*Ms));
+v= Rs.*[cos(Ls) sin(Ls) 0]';
+
+
+eps0 = 0.409092804;
+cos_eps0 = cos(eps0);
+sin_eps0 = sin(eps0);
+% Угол наклона плоскости эклиптики в экватору считаем с учетом нутации
+N = eNutation(tau);
+Nf = -acos(N(1,1))*sign(N(1,2));
+cos_eps = N(2,1)/sin(Nf);
+sin_eps = N(3,1)/sin(Nf);
+vSun = [cos(Ls)
+        sin(Ls)*cos_eps
+        sin(Ls)*sin_eps];
+    
+Rsun = Rs*vSun;   
+
+vSunBody = (quatrotate(modQJ2k2Body, vSun'))';
+
+
+%% Расчет положения Луны
+lMoon = 218.32 + 481267.883*tau;
+lMecl = lMoon + 6.29*sin(Mm) - 1.27*sin(Mm-2*Ds) + 0.66*sin(2*Ds) +...
+                0.21*sin(2*Mm) - 0.19*sin(Ms) -0.11*sin(2*Fm); 
+lMecl = (0.5*lMecl/pi - floor(0.5*lMecl/pi))*2*pi;
+fiMecl = 5.13*sin(Fm) + 0.28*sin(Mm+Fm) - 0.28*sin(Fm-Mm) - 0.17*sin(Fm-2*Ds);
+PM = 0.9508 + 0.0518*cos(Mm) + 0.0095*cos(Mm-2*Ds) + 0.0078*cos(2*Ds) + ...
+              0.0028*cos(2*Ms) + 0.0028*cos(2*Mm);
+          
+vMoonEcl = [cos(deg2rad(fiMecl))*cos(deg2rad(lMecl))
+            cos(deg2rad(fiMecl))*sin(deg2rad(lMecl)
+            sin(deg2rad(fiMecl))];
+vMoonEq = [1 0 0
+           0 cos_eps cos_eps]            
+end
+
