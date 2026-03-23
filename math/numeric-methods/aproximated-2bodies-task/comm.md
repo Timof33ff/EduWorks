@@ -1,1 +1,0 @@
-Was written for university scientific conference. Your can search for 2 bodies task and read about this more, where is only some code what produce investigation about Euler and Runge-Kutta calculation with using of step choose algorithm.
