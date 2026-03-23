@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/combinear">
+        <file>Combinear.qss</file>
+    </qresource>
+    <qresource prefix="/dark">
+        <file>darkstyle.qss</file>
+    </qresource>
+    <qresource prefix="/light">
+        <file>lightstyle.qss</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>timofeev.qss</file>
+    </qresource>
+</RCC>

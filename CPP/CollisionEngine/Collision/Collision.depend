@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1707411898 source:/home/kirill/Documents/CollisionEngine/Collision/src/Vector2.cpp
+	"Vector2.h"
+
+1707411898 /home/kirill/Documents/CollisionEngine/Collision/include/Vector2.h
+	<cmath>
+
+1707413527 source:/home/kirill/Documents/CollisionEngine/Collision/main.cpp
+	"include/constants.h"
+	"src/game.cpp"
+	"include/Random.h"
+	"include/Vector2.hpp"
+	<SFML/System.hpp>
+
+1707414065 source:/home/kirill/Documents/CollisionEngine/Collision/src/game.cpp
+	"constants.h"
+	"Vector2.hpp"
+	"VerletObject.hpp"
+	<SFML/Window.hpp>
+	<vector>
+	<random>
+
+1707413691 /home/kirill/Documents/CollisionEngine/Collision/include/constants.h
+	<Vector2.hpp>
+
+1707413683 /home/kirill/Documents/CollisionEngine/Collision/include/Vector2.hpp
+	<cmath>
+
+1707413683 /home/kirill/Documents/CollisionEngine/Collision/include/VerletObject.hpp
+	"constants.h"
+	"Vector2.hpp"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1707414065 /home/kirill/Documents/CollisionEngine/Collision/src/game.cpp
+	"constants.h"
+	"Vector2.hpp"
+	"VerletObject.hpp"
+	<SFML/Window.hpp>
+	<vector>
+	<random>
+
+1707413712 /home/kirill/Documents/CollisionEngine/Collision/include/Random.h
+	<random>
+

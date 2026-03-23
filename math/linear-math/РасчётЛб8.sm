@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="120">
+    <identity>
+      <id>7a4aecd6-d502-4779-9daa-de564bc15919</id>
+      <revision>2</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="176" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-weight: bold;">Лаборатоная работа №8</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="18" width="88" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-weight: bold;">Вариант 12</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="45" width="541" height="38" color="#000000" fontSize="10">
+      <text lang="rus" width="534" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="text-decoration: underline; font-style: italic;">1. Записать данное уравнение второго порядка в матричном виде и определить, фигуру какого типа оно определяет:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="108" width="298" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">3</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">8</e>
+          <e type="operand">xy</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">7</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">8</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">15</e>
+          <e type="operand">y</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="162" width="128" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="text-decoration: underline;">В матричном виде</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="198" width="219" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">y</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="operand">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">B</e>
+          <e type="operand">x</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="288" top="198" width="100" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">3</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">7</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" args="6">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="396" top="198" width="82" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">8</e>
+          <e type="operand">15</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="216" width="45" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>, где </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="261" width="321" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="text-decoration: underline;">Определим тип фигуры исследуемого уравнения</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="297" width="322" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Методом инвариантов найдем канонический вид:</p>
+        </content>
+      </text>
+    </region>
+    <region left="378" top="315" width="356" height="33" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">y</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">c</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">2</e>
+          <e type="operand">d</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">2</e>
+          <e type="operand">e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">y</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">f</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="324" width="370" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Общее уравнение линий второго порядка с ненулевым B</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="351" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="351" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">c</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="351" width="74" height="24" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">e</e>
+          <e type="operand">7.5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="369" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="369" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="369" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="396" width="106" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">S</e>
+          <e type="operand">a</e>
+          <e type="operand">c</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">10</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="423" width="159" height="65" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Δ</e>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operand">d</e>
+          <e type="operand">b</e>
+          <e type="operand">c</e>
+          <e type="operand">e</e>
+          <e type="operand">d</e>
+          <e type="operand">e</e>
+          <e type="operand">f</e>
+          <e type="operand">3</e>
+          <e type="operand">3</e>
+          <e type="function" args="11">mat</e>
+          <e type="function" args="1">det</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">59.25</e>
+        </result>
+      </math>
+    </region>
+    <region left="171" top="477" width="219" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>- инварианты данного уравнения</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="486" width="111" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δ</e>
+          <e type="operand">a</e>
+          <e type="operand">b</e>
+          <e type="operand">b</e>
+          <e type="operand">c</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" args="6">mat</e>
+          <e type="function" args="1">det</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="531" width="44" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δ</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">≠</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="531" width="603" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Значит, перед нами ур-ние центральной линии, и можно решать задачу методом инвариантов</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="558" width="459" height="38" color="#000000" fontSize="10">
+      <text lang="rus" width="455" fontFamily="Arial" fontSize="10">
+        <content>
+          <p> Необходимо подобрать новую прямоугольную систему координат так, чтобы уравнение данной линии приняло вид</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="612" width="453" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>При этом инварианты сохранят свои значения, а B, D, E обратятся в 0</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="648" width="90" height="24" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">S</e>
+          <e type="operand">A'</e>
+          <e type="operand">C'</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="666" width="129" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Запишем систему:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="675" width="214" height="65" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Δ</e>
+          <e type="operand">A'</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">C'</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">F'</e>
+          <e type="operand">3</e>
+          <e type="operand">3</e>
+          <e type="function" args="11">mat</e>
+          <e type="function" args="1">det</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">A'</e>
+          <e type="operand">C'</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="396" top="675" width="273" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">10</e>
+          <e type="operand">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">A</e>
+          <e type="function" args="2">solve</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.5279</e>
+          <e type="operand">9.4721</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="234" top="693" width="96" height="24" color="#000000" fontSize="10">
+      <math error="68" errorLocation="2">
+        <input>
+          <e type="operand">A'</e>
+          <e type="operand">C'</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="396" top="711" width="315" height="44" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A.1</e>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">10</e>
+          <e type="operand">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">A</e>
+          <e type="function" args="2">solve</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.5279</e>
+        </result>
+      </math>
+    </region>
+    <region left="234" top="720" width="139" height="24" color="#000000" fontSize="10">
+      <math error="68" errorLocation="4">
+        <input>
+          <e type="operand">A'</e>
+          <e type="operand">C'</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">59.25</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="738" width="164" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δ</e>
+          <e type="operand">A'</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">C'</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" args="6">mat</e>
+          <e type="function" args="1">det</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">A'</e>
+          <e type="operand">C'</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="234" top="747" width="80" height="24" color="#000000" fontSize="10">
+      <math error="68" errorLocation="2">
+        <input>
+          <e type="operand">A'</e>
+          <e type="operand">C'</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="396" top="747" width="315" height="44" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A.2</e>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">10</e>
+          <e type="operand">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">A</e>
+          <e type="function" args="2">solve</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.4721</e>
+        </result>
+      </math>
+    </region>
+    <region left="396" top="792" width="129" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C.1</e>
+          <e type="operand">5</e>
+          <e type="operand">A.1</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.4721</e>
+        </result>
+      </math>
+    </region>
+    <region left="567" top="792" width="129" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C.2</e>
+          <e type="operand">5</e>
+          <e type="operand">A.2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.5279</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="837" width="178" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A'</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">C'</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="396" top="837" width="146" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F'</e>
+          <e type="operand">59.25</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">11.85</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="882" width="151" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A'</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">C'</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="927" width="247" height="57" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A.1</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">C.1</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F'</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">20.68</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">0.79</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="288" top="927" width="143" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">20.68</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">0.79</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="990" width="128" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">20.68</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">0.79</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">≡</e>
+        </input>
+      </math>
+    </region>
+    <region left="261" top="990" width="380" height="23" color="#000000" fontSize="10">
+      <text lang="rus" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Значит, исходное уравнение определяет<span style="font-weight: bold;"> мнимый эллипс</span></p>
+        </content>
+      </text>
+    </region>
+  </regions>
+</worksheet>
